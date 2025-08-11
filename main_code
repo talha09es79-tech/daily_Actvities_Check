@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MySmartTools — Free Online Calculators & Utilities</title>
+  <meta name="description" content="Free online calculators and utility tools: loan & compound interest calculators, budget planner, BMI & calorie tracker, text & unit converters, keyword density checker, meta tag generator and more." />
+  <meta name="keywords" content="loan calculator, compound interest, budget planner, BMI, calorie tracker, unit converter, text tools, keyword density checker, meta tag generator" />
+  <meta name="author" content="Your Name or Company" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+
+  <style>
+    :root {
+      --bg: #f7fafc;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #0ea5a4;
+      --header-height: 68px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, Arial, sans-serif;
+      background: var(--bg);
+      color: #0f172a;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(90deg,#06b6d4, #0ea5a4);
+      color: white;
+      padding: 18px 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: var(--header-height);
+    }
+    .brand {
+      font-weight: 700;
+      font-size: 22px;
+      user-select: none;
+    }
+    nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: nowrap;
+    }
+    nav a {
+      background: rgba(255 255 255 / 0.12);
+      padding: 8px 14px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover, nav a:focus {
+      background: rgba(255 255 255 / 0.28);
+      outline: none;
+    }
+    main.container {
+      max-width: 1100px;
+      margin: calc(var(--header-height) + 24px) auto 40px;
+      padding: 0 16px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(8, 15, 26, 0.06);
+      flex-grow: 1;
+      min-width: 280px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    button:hover, button:focus {
+      background: #0b8181;
+      outline: none;
+    }
+    footer {
+      padding: 18px 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+    .tools-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .tools-list button {
+      background: #eef2f7;
+      color: #0f172a;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      font-weight: 600;
+    }
+    .tools-list button:hover, .tools-list button:focus {
+      background: #d4f0f0;
+      outline: none;
+    }
+    .ad-placeholder {
+      background: linear-gradient(90deg,#eef2ff,#fff);
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      color: #475569;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    @media (max-width: 900px) {
+      nav {
+        overflow-x: auto;
+        gap: 8px;
+      }
+      main.container {
+        flex-direction: column;
+        margin-top: calc(var(--header-height) + 12px);
+      }
+    }
+  </style>
+
+  <!-- Google AdSense Script -->
+  <script data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+  <header role="banner">
+    <div class="brand" aria-label="MySmartTools Home">MySmartTools</div>
+    <nav role="navigation" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="finance.html">Finance</a>
+      <a href="health.html">Health</a>
+      <a href="productivity.html">Utilities</a>
+      <a href="seo.html">SEO Tools</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="container" role="main">
+    <section class="card" aria-labelledby="welcome-title">
+      <h1 id="welcome-title">Welcome to MySmartTools</h1>
+      <p>Fast, privacy-first collection of handy calculators and utilities. Choose a category above to get started.</p>
+      <div class="tools-list" role="list" aria-label="Tool categories">
+        <button onclick="location.href='finance.html'">Finance Tools</button>
+        <button onclick="location.href='health.html'">Health Tools</button>
+        <button onclick="location.href='productivity.html'">Utilities</button>
+        <button onclick="location.href='seo.html'">SEO Tools</button>
+      </div>
+      <!-- Responsive AdSense responsive ad unit -->
+      <div class="ad-placeholder" aria-label="Advertisement">
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+          data-ad-slot="1234567890"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="why-title" style="margin-top: 24px;">
+      <h2 id="why-title">Why these tools?</h2>
+      <ul>
+        <li>They solve common, evergreen problems people search for.</li>
+        <li>Each tool targets specific search keywords (good for SEO).</li>
+        <li>Lightweight client-side code for fast load times and privacy.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <small>&copy; <span id="year"></span> MySmartTools — Built for quick utility. Not medical or financial advice.</small>
+  </footer>
+
+  <script>
+    // Set current year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Load ads
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</body>
+</html>
